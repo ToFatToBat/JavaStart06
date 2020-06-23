@@ -1,4 +1,4 @@
-package zajecia.homework.workersTable;
+package homework.workersTable;
 
 import java.util.Scanner;
 

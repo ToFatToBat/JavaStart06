@@ -1,6 +1,4 @@
-package zajecia.homework.workersTable;
-
-import javax.xml.crypto.Data;
+package homework.workersTable;
 
 public class App {
     public static void main(String[] args) {
