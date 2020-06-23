@@ -4,21 +4,15 @@ public class App {
     public static void main(String[] args) {
 
         DataReader dataReader = new DataReader();
-        InfoStorege infoStorege = new InfoStorege();
+        dataReader.noOfLoadings();
 
-       dataReader.employeeLoader();
-        System.out.println(infoStorege.employees[0]);
-        System.out.println(infoStorege.employees[1]);
-
-       dataReader.employeeLoader();
-        System.out.println(infoStorege.employees[0]);
-        System.out.println(infoStorege.employees[1]);
-
-
-
-        for (Employee p : infoStorege.employees) {
+        // Ponizsza petle mozna zawsze wylaczyc patrzac stricte na tresc zadania
+        for (Employee p : dataReader.infoStorege.employees) {
             System.out.println(p);
         }
 
+       dataReader.salaryEmployeesSum();
+
     }
 }
+
