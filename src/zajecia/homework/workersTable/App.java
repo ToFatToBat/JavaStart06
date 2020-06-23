@@ -9,7 +9,12 @@ public class App {
         InfoStorege infoStorege = new InfoStorege();
 
        dataReader.employeeLoader();
+        System.out.println(infoStorege.employees[0]);
+        System.out.println(infoStorege.employees[1]);
+
        dataReader.employeeLoader();
+        System.out.println(infoStorege.employees[0]);
+        System.out.println(infoStorege.employees[1]);
 
 
 

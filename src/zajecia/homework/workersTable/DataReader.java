@@ -3,7 +3,6 @@ package zajecia.homework.workersTable;
 import java.util.Scanner;
 
 public class DataReader {
-    Employee employee = new Employee();
     Scanner sc = new Scanner(System.in);
     InfoStorege infoStorege = new InfoStorege();
 
@@ -15,8 +14,9 @@ public class DataReader {
         System.out.println("Podaj wysokosc wyplaty:");
         int salary = sc.nextInt();
         sc.nextLine();
+
         Employee employee = new Employee(name, surname, salary);
-        infoStorege.addEmployee();
+        infoStorege.addEmployee(employee);
         return employee;
     }
 }

@@ -5,11 +5,10 @@ public class InfoStorege {
     int employeeCount;
 
     Employee [] employees = new Employee[3];
-    DataReader dataReader = new DataReader();
 
 
-    public void addEmployee() {
-        employees[employeeCount] = dataReader.employee;
+    public void addEmployee(Employee employee) {
+        employees[employeeCount] = employee;
         employeeCount++;
     }
 }
