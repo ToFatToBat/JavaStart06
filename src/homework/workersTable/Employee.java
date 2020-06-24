@@ -5,6 +5,8 @@ public class Employee {
     private String surname;
     private int salary;
 
+
+
     public Employee() {
     }
 
@@ -19,6 +21,8 @@ public class Employee {
     public int getSalary() {
         return salary;
     }
+
+
 
 
     @Override
