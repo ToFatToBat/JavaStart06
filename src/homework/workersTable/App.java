@@ -14,7 +14,9 @@ public class App {
             System.out.println(p);
         }
 
-        dataReader.employeeRepository.salaryEmployeesSum();
+        dataReader.salaryEmployeesSum();
+
+        dataReader.employeeRepository.getEmployee(1);
 
     }
 }

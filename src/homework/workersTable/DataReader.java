@@ -7,13 +7,11 @@ public class DataReader {
     EmployeeRepository employeeRepository = new EmployeeRepository();
 
 
-
-
-    public void noOfLoadings () {
+    public void noOfLoadings() {
         System.out.println("Podaj liczbe pracownikow do wprowadzenia:");
         int w = sc.nextInt();
         sc.nextLine();
-        for (int q = 0; q < w; q++){
+        for (int q = 0; q < w; q++) {
             employeeRepository.addEmployee(employeeLoader());
         }
     }
@@ -30,6 +28,14 @@ public class DataReader {
         return employee;
     }
 
-
+    public void salaryEmployeesSum() {
+        int result = 0;
+        int i = 0;
+        while (employeeRepository.employees[i] != null) {
+            result += employeeRepository.employees[i].getSalary();
+            i++;
+        }
+        System.out.println(result);
+    }
 
 }
