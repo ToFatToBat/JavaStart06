@@ -4,20 +4,27 @@ public class App {
     public static void main(String[] args) {
 
         DataReader dataReader = new DataReader();
+        EmployeeRepository employeeRepository = new EmployeeRepository();
+        EmployeeCalculations employeeCalculations = new EmployeeCalculations();
 
 
         dataReader.noOfLoadings();
 
-
-        // Ponizsza petle mozna zawsze wylaczyc patrzac stricte na tresc zadania
-        for (Employee p : dataReader.employeeRepository.employees) {
-            System.out.println(p);
+        for (int q = 0; q < dataReader.noOfLoadingsResult; q++) {
+            employeeRepository.addEmployee(dataReader.employeeLoader());
         }
 
-        dataReader.salaryEmployeesSum();
 
-        dataReader.employeeRepository.getEmployee(1);
+            // Ponizsza petle mozna zawsze wylaczyc patrzac stricte na tresc zadania
+            for (Employee p : employeeRepository.employees) {
+                System.out.println(p);
+            }
 
+            employeeCalculations.salaryEmployeesSum(employeeRepository);
+
+
+
+            employeeRepository.getEmployee(1);
+
+        }
     }
-}
-

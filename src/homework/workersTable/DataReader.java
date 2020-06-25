@@ -3,17 +3,18 @@ package homework.workersTable;
 import java.util.Scanner;
 
 public class DataReader {
+    int noOfLoadingsResult;
+
     Scanner sc = new Scanner(System.in);
     EmployeeRepository employeeRepository = new EmployeeRepository();
 
 
     public void noOfLoadings() {
         System.out.println("Podaj liczbe pracownikow do wprowadzenia:");
-        int w = sc.nextInt();
+        noOfLoadingsResult = sc.nextInt();
         sc.nextLine();
-        for (int q = 0; q < w; q++) {
-            employeeRepository.addEmployee(employeeLoader());
-        }
+
+
     }
 
     public Employee employeeLoader() {
@@ -28,14 +29,6 @@ public class DataReader {
         return employee;
     }
 
-    public void salaryEmployeesSum() {
-        int result = 0;
-        int i = 0;
-        while (employeeRepository.employees[i] != null) {
-            result += employeeRepository.employees[i].getSalary();
-            i++;
-        }
-        System.out.println(result);
-    }
+
 
 }
