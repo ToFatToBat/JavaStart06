@@ -5,27 +5,16 @@ import java.util.Scanner;
 public class MathQuiz {
 
     Scanner sc = new Scanner(System.in);
-    private boolean question1Result;
-    private boolean question2Result;
-    private boolean question3Result;
-    private int quizResult;
+    boolean question1Result;
+    boolean question2Result;
+    boolean question3Result;
 
-    public boolean isQuestion1Result() {
-        return question1Result;
-    }
-
-    public boolean isQuestion2Result() {
-        return question2Result;
-    }
-
-    public boolean isQuestion3Result() {
-        return question3Result;
-    }
 
     public void quiz() {
-        question1();
-        question2();
-        question3();
+        question1Result = question1();
+        question2Result = question2();
+        question3Result = question3();
+        sc.close();
     }
 
     public boolean question1() {
@@ -33,9 +22,8 @@ public class MathQuiz {
         int result = sc.nextInt();
         sc.nextLine();
         if (result == 15) {
-            question1Result = true;
-        } else question1Result = false;
-        return question1Result;
+            return result == 15;
+        } else return result == 15;
     }
 
     public boolean question2() {
@@ -43,9 +31,8 @@ public class MathQuiz {
         int result = sc.nextInt();
         sc.nextLine();
         if (result == 144) {
-            question2Result = true;
-        } else question2Result = false;
-        return question2Result;
+            return result == 144;
+        } else return result == 144;
     }
 
     public boolean question3() {
@@ -53,9 +40,8 @@ public class MathQuiz {
         int result = sc.nextInt();
         sc.nextLine();
         if (result == 123) {
-            question3Result = true;
-        } else question3Result = false;
-        return question3Result;
+            return result == 123;
+        } else return result == 123;
 
     }
 
