@@ -3,19 +3,10 @@ package homework.workersTable;
 import java.util.Scanner;
 
 public class DataReader {
-    int noOfLoadingsResult;
+
 
     Scanner sc = new Scanner(System.in);
-    EmployeeRepository employeeRepository = new EmployeeRepository();
 
-
-    public void noOfLoadings() {
-        System.out.println("Podaj liczbe pracownikow do wprowadzenia:");
-        noOfLoadingsResult = sc.nextInt();
-        sc.nextLine();
-
-
-    }
 
     public Employee employeeLoader() {
         System.out.println("Podaj imie pracownika:");
@@ -28,7 +19,6 @@ public class DataReader {
         Employee employee = new Employee(name, surname, salary);
         return employee;
     }
-
 
 
 }
