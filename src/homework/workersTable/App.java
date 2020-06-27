@@ -24,7 +24,7 @@ public class App {
             System.out.println(p);
         }
 
-        employeeCalculations.salaryEmployeesSum(employeeRepository);
+        employeeCalculations.salaryEmployeesSum(employeeRepository.employees);
 
 
         employeeRepository.getEmployee(1);
