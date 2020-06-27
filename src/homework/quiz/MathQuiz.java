@@ -21,27 +21,22 @@ public class MathQuiz {
         System.out.println("Podaj wynik mnozenia 3*5:");
         int result = sc.nextInt();
         sc.nextLine();
-        if (result == 15) {
             return result == 15;
-        } else return result == 15;
     }
 
     public boolean question2() {
         System.out.println("Podaj pole kwadratu o boku 12");
         int result = sc.nextInt();
         sc.nextLine();
-        if (result == 144) {
             return result == 144;
-        } else return result == 144;
+
     }
 
     public boolean question3() {
         System.out.println("jaki jest pierwiastek kwadratowy z liczby 15129?");
         int result = sc.nextInt();
         sc.nextLine();
-        if (result == 123) {
             return result == 123;
-        } else return result == 123;
 
     }
 
