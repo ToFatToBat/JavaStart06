@@ -36,6 +36,7 @@ public class MathQuiz {
         System.out.println("jaki jest pierwiastek kwadratowy z liczby 15129?");
         int result = sc.nextInt();
         sc.nextLine();
+
             return result == 123;
 
     }
