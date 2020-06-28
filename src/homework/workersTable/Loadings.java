@@ -4,18 +4,12 @@ import java.util.Scanner;
 
 public class Loadings {
 
-    private int noOfLoadingsResult;
+    Scanner sc = new Scanner(System.in);
 
-  Scanner sc = new Scanner(System.in);
 
-    public int getNoOfLoadingsResult() {
-        return noOfLoadingsResult;
-    }
-
-    public void   noOfLoadings() {
-
+    public int noOfLoadings() {
         System.out.println("Podaj liczbe pracownikow do wprowadzenia:");
-        noOfLoadingsResult = sc.nextInt();
-        sc.nextLine();
+        return sc.nextInt();
+
     }
 }

@@ -6,7 +6,6 @@ public class Employee {
     private int salary;
 
 
-
     public Employee() {
     }
 
@@ -17,12 +16,9 @@ public class Employee {
     }
 
 
-
     public int getSalary() {
         return salary;
     }
-
-
 
 
     @Override

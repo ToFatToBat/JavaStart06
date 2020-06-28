@@ -10,31 +10,26 @@ public class App {
         Loadings loadings = new Loadings();
 
 
+        loadings.noOfLoadings();
 
-         loadings.noOfLoadings ();
 
-
-        for (int q = 0; q < loadings.getNoOfLoadingsResult(); q++) {
+        for (int q = 0; q < loadings.noOfLoadings(); q++) {
             employeeRepository.addEmployee(dataReader.employeeLoader());
         }
 
 
         // Ponizsza petle mozna zawsze wylaczyc patrzac stricte na tresc zadania
-        for (Employee p : employeeRepository.employees) {
+        for (Employee p : employeeRepository.getEmployees()) {
             System.out.println(p);
         }
 
-        employeeCalculations.salaryEmployeesSum(employeeRepository.employees);
+        employeeCalculations.salaryEmployeesSum(employeeRepository.getEmployees());
 
 
-        employeeRepository.getEmployee(1);
+        employeeRepository.showEmployee(1);
 
 
     }
-
-
-
-
 
 
 }

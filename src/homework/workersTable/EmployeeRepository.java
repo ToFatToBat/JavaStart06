@@ -3,8 +3,12 @@ package homework.workersTable;
 public class EmployeeRepository {
 
     private int employeeCount;
+    private Employee[] employees = new Employee[3];
 
-    Employee[] employees = new Employee[3];
+
+    public Employee[] getEmployees() {
+        return employees;
+    }
 
 
     public void addEmployee(Employee employee) {
@@ -12,8 +16,8 @@ public class EmployeeRepository {
         employeeCount++;
     }
 
-    public void getEmployee(int employeeNumberOnList) {
+    public void showEmployee(int employeeNumberOnList) {
         System.out.println(employees[employeeNumberOnList]);
-            }
+    }
 
 }
