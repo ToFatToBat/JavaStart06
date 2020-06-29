@@ -5,12 +5,11 @@ public class App {
 
 
         DataReader dataReader = new DataReader();
-        EmployeeRepository employeeRepository = new EmployeeRepository();
         EmployeeCalculations employeeCalculations = new EmployeeCalculations();
         Loadings loadings = new Loadings();
         int nrOfLoadings = loadings.noOfLoadings();
+        EmployeeRepository employeeRepository = new EmployeeRepository(nrOfLoadings);
 
-        //loadings.noOfLoadings();
 
 
         for (int q = 0; q < nrOfLoadings; q++) {

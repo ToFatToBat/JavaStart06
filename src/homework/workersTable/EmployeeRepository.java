@@ -3,8 +3,13 @@ package homework.workersTable;
 public class EmployeeRepository {
 
     private int employeeCount;
-    private Employee[] employees = new Employee[3];
 
+
+    private Employee[] employees;
+
+    public EmployeeRepository(int employeeSize) {
+        this.employees = new Employee[employeeSize];
+    }
 
     public Employee[] getEmployees() {
         return employees;
