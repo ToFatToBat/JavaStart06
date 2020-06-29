@@ -8,12 +8,12 @@ public class App {
         EmployeeRepository employeeRepository = new EmployeeRepository();
         EmployeeCalculations employeeCalculations = new EmployeeCalculations();
         Loadings loadings = new Loadings();
+        int nrOfLoadings = loadings.noOfLoadings();
+
+        //loadings.noOfLoadings();
 
 
-        loadings.noOfLoadings();
-
-
-        for (int q = 0; q < loadings.noOfLoadings(); q++) {
+        for (int q = 0; q < nrOfLoadings; q++) {
             employeeRepository.addEmployee(dataReader.employeeLoader());
         }
 
